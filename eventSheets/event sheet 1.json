@@ -1,0 +1,245 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 726258934902402,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "Player",
+					"sid": 467345524996863,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "630"
+					}
+				}
+			],
+			"sid": 166129109419192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 850285640644005,
+					"parameters": {
+						"key": 90
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "Player",
+					"sid": 743713129012138,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "330"
+					}
+				}
+			],
+			"sid": 305368383496153
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Player",
+					"sid": 257224384804944
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 326320940206393
+				}
+			],
+			"sid": 264011527849166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 802116047421107,
+					"parameters": {
+						"object": "SlingshotGet"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 103920893286000,
+					"parameters": {
+						"instance-variable": "Slingshot",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SlingshotGet",
+					"sid": 666401946033646
+				}
+			],
+			"sid": 590936930974690
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 279506104081998,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 772712821922112,
+					"parameters": {
+						"instance-variable": "Slingshot",
+						"comparison": 5,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 469575766665444,
+					"parameters": {
+						"object": "ShotBullet",
+						"layer": "\"GAME\"",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 459168157412063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "ShotBullet",
+					"sid": 372694474933191
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Player",
+					"sid": 791491586573704
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "ShotBullet",
+					"sid": 483057563732544,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 280161054164436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 335802889376035,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 820892696157974,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 681338052001433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 969696183214549,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 572613251427732,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 807219466917136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "ShotBullet",
+					"sid": 163133177865373
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ShotBullet",
+					"sid": 171850800895538
+				}
+			],
+			"sid": 764062536918711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-flipped",
+					"objectClass": "Player",
+					"sid": 609204085031636
+				}
+			],
+			"actions": [],
+			"sid": 151639690830451
+		}
+	],
+	"sid": 477804456748490
+}
