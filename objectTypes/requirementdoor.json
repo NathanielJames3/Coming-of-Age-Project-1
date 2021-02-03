@@ -1,32 +1,14 @@
 {
-	"name": "Player",
+	"name": "RequirementDoor",
 	"plugin-id": "Sprite",
-	"sid": 388343633976489,
+	"sid": 318489670474151,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Slingshot",
-			"type": "number",
-			"desc": "",
-			"sid": 695950430671236
-		},
-		{
-			"name": "Shots",
-			"type": "number",
-			"desc": "",
-			"sid": 153521815781164
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 568259750416888
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 643236285854306
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 844368687136432
 		}
 	],
 	"effectTypes": [],
@@ -42,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2712905,
+						"imageSpriteId": 6817614,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 624562153068530,
+				"sid": 521728453786860,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

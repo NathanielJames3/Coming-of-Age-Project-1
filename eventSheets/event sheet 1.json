@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "LimitTime",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 338134918248325
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -75,10 +85,10 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 802116047421107,
+					"objectClass": "SlingshotGet",
+					"sid": 255795722442979,
 					"parameters": {
-						"object": "SlingshotGet"
+						"object": "Player"
 					}
 				}
 			],
@@ -96,6 +106,15 @@
 					"id": "destroy",
 					"objectClass": "SlingshotGet",
 					"sid": 666401946033646
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 926596042837051,
+					"parameters": {
+						"instance-variable": "Shots",
+						"value": "5"
+					}
 				}
 			],
 			"sid": 590936930974690
@@ -120,6 +139,16 @@
 						"comparison": 5,
 						"value": "1"
 					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 218147695634303,
+					"parameters": {
+						"instance-variable": "Shots",
+						"comparison": 4,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -130,7 +159,17 @@
 					"parameters": {
 						"object": "ShotBullet",
 						"layer": "\"GAME\"",
-						"image-point": "0"
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 136870492924107,
+					"parameters": {
+						"instance-variable": "Shots",
+						"value": "1"
 					}
 				}
 			],
@@ -232,13 +271,239 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-flipped",
-					"objectClass": "Player",
-					"sid": 609204085031636
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 123426085177959
 				}
 			],
-			"actions": [],
-			"sid": 151639690830451
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "AmmoText",
+					"sid": 136526826381995,
+					"parameters": {
+						"text": "\"Ammo: \" & Player.Shots"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TimeText",
+					"sid": 432385137670544,
+					"parameters": {
+						"text": "\"Time: \" & LimitTime"
+					}
+				}
+			],
+			"sid": 499476850330922
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 862594287251153,
+					"parameters": {
+						"object": "Hourglass"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 965597240902612,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 5,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 279148276238353,
+					"parameters": {
+						"variable": "LimitTime",
+						"value": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Hourglass",
+					"sid": 522268831699132
+				}
+			],
+			"sid": 561941359553150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 702445230741953,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 755029710524018,
+					"parameters": {
+						"variable": "LimitTime",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 159161943741907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 188707709748656,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 453597065390717
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 225965302929564
+				}
+			],
+			"sid": 204584731130362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 462748813046889,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 514680039341259
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 767224709792469
+				}
+			],
+			"sid": 272311896238248
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Target",
+					"sid": 152384125829141
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RequirementDoor",
+					"sid": 754772404116311
+				}
+			],
+			"sid": 843656939746376
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ShotBullet",
+					"sid": 114896710435812,
+					"parameters": {
+						"object": "Target"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Target",
+					"sid": 122534080902672
+				}
+			],
+			"sid": 628410647145216
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 818853704238641,
+					"parameters": {
+						"object": "Door"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 301089015029405
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 639735446623477
+				}
+			],
+			"sid": 451609695475746
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ShotBullet",
+					"sid": 312727153874044,
+					"parameters": {
+						"object": "Hourglass"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 866558785383329,
+					"parameters": {
+						"variable": "LimitTime",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 523044462375085
 		}
 	],
 	"sid": 477804456748490

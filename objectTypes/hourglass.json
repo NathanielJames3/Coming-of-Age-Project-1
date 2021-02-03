@@ -1,34 +1,10 @@
 {
-	"name": "Player",
+	"name": "Hourglass",
 	"plugin-id": "Sprite",
-	"sid": 388343633976489,
+	"sid": 747720139760196,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Slingshot",
-			"type": "number",
-			"desc": "",
-			"sid": 695950430671236
-		},
-		{
-			"name": "Shots",
-			"type": "number",
-			"desc": "",
-			"sid": 153521815781164
-		}
-	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 568259750416888
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 643236285854306
-		}
-	],
+	"instanceVariables": [],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -42,12 +18,24 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2712905,
+						"imageSpriteId": 6563186,
+						"collisionPoly": {
+							"points": [
+								0.08800000000000002,
+								0.06400000000000002,
+								0.9119999999999999,
+								0.08400000000000002,
+								0.8679999999999999,
+								0.8199999999999998,
+								0.09999999999999998,
+								0.7919999999999999
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 624562153068530,
+				"sid": 665097417850898,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

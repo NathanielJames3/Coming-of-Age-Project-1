@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 22500,
+	"savedWithRelease": 23400,
 	"name": "ComingOfAgeProject",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,15 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -27,7 +35,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -35,7 +43,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -43,7 +51,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -51,7 +59,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r234",
 			"bundled": false
 		}
 	],
@@ -62,7 +70,13 @@
 			"Platform",
 			"Keyboard",
 			"SlingshotGet",
-			"ShotBullet"
+			"ShotBullet",
+			"AmmoText",
+			"Hourglass",
+			"TimeText",
+			"Door",
+			"Target",
+			"RequirementDoor"
 		],
 		"subfolders": []
 	},
@@ -215,6 +229,7 @@
 		"orientations": "landscape",
 		"enableWebGL": true,
 		"gpuPreference": "high-performance",
+		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "trilinear",
