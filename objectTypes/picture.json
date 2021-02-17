@@ -1,0 +1,20 @@
+{
+	"name": "Picture",
+	"plugin-id": "TiledBg",
+	"sid": 539933793189275,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 75,
+		"height": 101,
+		"originX": -3.652941176470588,
+		"originY": 1.7861271676300579,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Picture.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7667937,
+		"useCollisionPoly": true
+	}
+}

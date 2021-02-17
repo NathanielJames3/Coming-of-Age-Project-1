@@ -1,0 +1,20 @@
+{
+	"name": "Poster",
+	"plugin-id": "TiledBg",
+	"sid": 846383616247968,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 175,
+		"height": 231,
+		"originX": 0.5851648351648352,
+		"originY": 0.3328729281767956,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Poster.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9047649,
+		"useCollisionPoly": true
+	}
+}

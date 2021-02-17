@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -79,7 +87,15 @@
 			"RequirementDoor",
 			"PlayerTeen",
 			"PlayerAdult",
-			"PlayerOld"
+			"PlayerOld",
+			"WallBG",
+			"Bed",
+			"Bookshelf",
+			"Chair",
+			"Nightstand",
+			"Poster",
+			"Picture",
+			"TiledBackground"
 		],
 		"subfolders": []
 	},

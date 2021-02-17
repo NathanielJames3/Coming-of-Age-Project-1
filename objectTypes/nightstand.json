@@ -1,0 +1,20 @@
+{
+	"name": "Nightstand",
+	"plugin-id": "TiledBg",
+	"sid": 926375592504815,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 120,
+		"height": 196,
+		"originX": 1.7458233890214798,
+		"originY": -0.3889695210449927,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Nightstand.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3889801,
+		"useCollisionPoly": true
+	}
+}

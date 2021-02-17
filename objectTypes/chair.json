@@ -1,0 +1,20 @@
+{
+	"name": "Chair",
+	"plugin-id": "TiledBg",
+	"sid": 940699277538206,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 100,
+		"height": 170,
+		"originX": 0.6567357512953368,
+		"originY": 0.3338391502276176,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Illustration19.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2632260,
+		"useCollisionPoly": true
+	}
+}

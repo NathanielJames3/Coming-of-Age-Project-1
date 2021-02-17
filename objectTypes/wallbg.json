@@ -1,0 +1,20 @@
+{
+	"name": "WallBG",
+	"plugin-id": "TiledBg",
+	"sid": 563795445561693,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 2000,
+		"height": 1083,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\wall.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4312979,
+		"useCollisionPoly": true
+	}
+}
