@@ -1,0 +1,56 @@
+{
+	"name": "PlayerTeen",
+	"plugin-id": "Sprite",
+	"sid": 327120627055627,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Slingshot",
+			"type": "number",
+			"desc": "",
+			"sid": 929245833201630
+		},
+		{
+			"name": "Shots",
+			"type": "number",
+			"desc": "",
+			"sid": 529590896873487
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 627021111156440
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5558743,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 169263247855664,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

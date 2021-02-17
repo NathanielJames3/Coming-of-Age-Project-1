@@ -67,18 +67,18 @@
 			"conditions": [
 				{
 					"id": "is-outside-layout",
-					"objectClass": "Player",
-					"sid": 257224384804944
+					"objectClass": "Family1",
+					"sid": 768104089978150
 				}
 			],
 			"actions": [
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 326320940206393
+					"sid": 300859317821160
 				}
 			],
-			"sid": 264011527849166
+			"sid": 958774632917459
 		},
 		{
 			"eventType": "block",
@@ -301,7 +301,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
+					"objectClass": "Family1",
 					"sid": 862594287251153,
 					"parameters": {
 						"object": "Hourglass"
@@ -320,9 +320,9 @@
 			],
 			"actions": [
 				{
-					"id": "subtract-from-eventvar",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 279148276238353,
+					"sid": 365439043459157,
 					"parameters": {
 						"variable": "LimitTime",
 						"value": "2"
@@ -459,7 +459,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
+					"objectClass": "Family1",
 					"sid": 818853704238641,
 					"parameters": {
 						"object": "Door"
@@ -504,6 +504,237 @@
 				}
 			],
 			"sid": 523044462375085
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 700893271968923,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 3,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 247538645002902,
+					"parameters": {
+						"object": "PlayerTeen",
+						"layer": "\"GAME\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 641159497033130
+				},
+				{
+					"id": "set-height",
+					"objectClass": "PlayerTeen",
+					"sid": 446039079474831,
+					"parameters": {
+						"height": "81"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "PlayerTeen",
+					"sid": 930662974360671,
+					"parameters": {
+						"width": "79"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerTeen",
+					"sid": 687650707300859,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "630"
+					}
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "PlayerTeen",
+					"sid": 236903789831918,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerTeen",
+					"sid": 887500843108637,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "950"
+					}
+				}
+			],
+			"sid": 315806455248524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 867450871685904,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 3,
+						"value": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "PlayerTeen",
+					"sid": 511396312079270,
+					"parameters": {
+						"object": "PlayerAdult",
+						"layer": "\"GAME\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerTeen",
+					"sid": 929826645363411
+				},
+				{
+					"id": "set-height",
+					"objectClass": "PlayerAdult",
+					"sid": 391055330449070,
+					"parameters": {
+						"height": "81"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "PlayerAdult",
+					"sid": 572312632791643,
+					"parameters": {
+						"width": "79"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerAdult",
+					"sid": 599036920536142,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "530"
+					}
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "PlayerAdult",
+					"sid": 404902143164685,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerAdult",
+					"sid": 897622210012682,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "550"
+					}
+				}
+			],
+			"sid": 390917199359035
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 697255264587178,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 3,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "PlayerAdult",
+					"sid": 673883077757081,
+					"parameters": {
+						"object": "PlayerOld",
+						"layer": "\"GAME\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerAdult",
+					"sid": 706029566651505
+				},
+				{
+					"id": "set-height",
+					"objectClass": "PlayerOld",
+					"sid": 851596274238190,
+					"parameters": {
+						"height": "81"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "PlayerOld",
+					"sid": 750041837439893,
+					"parameters": {
+						"width": "79"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "PlayerOld",
+					"sid": 764703120051173,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "230"
+					}
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "PlayerOld",
+					"sid": 225761406192244,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "PlayerOld",
+					"sid": 502762201039640,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "350"
+					}
+				}
+			],
+			"sid": 963213863540802
 		}
 	],
 	"sid": 477804456748490

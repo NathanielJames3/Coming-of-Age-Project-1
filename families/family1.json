@@ -1,0 +1,20 @@
+{
+	"name": "Family1",
+	"plugin-id": "Sprite",
+	"sid": 737710289981415,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo2",
+			"sid": 855779404870115
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Player",
+		"PlayerTeen",
+		"PlayerAdult",
+		"PlayerOld"
+	]
+}

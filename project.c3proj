@@ -76,14 +76,19 @@
 			"TimeText",
 			"Door",
 			"Target",
-			"RequirementDoor"
+			"RequirementDoor",
+			"PlayerTeen",
+			"PlayerAdult",
+			"PlayerOld"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Family1"
+		],
 		"subfolders": []
 	},
 	"layouts": {

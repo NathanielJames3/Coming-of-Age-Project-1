@@ -1,0 +1,61 @@
+{
+	"name": "PlayerAdult",
+	"plugin-id": "Sprite",
+	"sid": 497683310092355,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Slingshot",
+			"type": "number",
+			"desc": "",
+			"sid": 581979558606383
+		},
+		{
+			"name": "Shots",
+			"type": "number",
+			"desc": "",
+			"sid": 644244111100807
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 175043480784636
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 545417887081039
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8874030,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 202114472608336,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
