@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 23400,
+	"savedWithRelease": 23404,
 	"name": "ComingOfAgeProject",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r234",
+			"version": "r234.4",
 			"bundled": false
 		}
 	],
@@ -187,7 +187,29 @@
 		},
 		"general": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "juvi idle sprite sheet..png",
+							"type": "image/png",
+							"sid": 434593917550950
+						},
+						{
+							"name": "juvi-walk.png",
+							"type": "image/png",
+							"sid": 152844099038274
+						},
+						{
+							"name": "juvi jumpsheet.png",
+							"type": "image/png",
+							"sid": 926023732145085
+						}
+					],
+					"subfolders": [],
+					"name": "Sprites"
+				}
+			]
 		}
 	},
 	"timelines": {
