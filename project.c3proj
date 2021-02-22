@@ -1,23 +1,23 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23400,
-	"name": "Juvee level 3",
+	"name": "Juvee level 4",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
@@ -55,15 +55,16 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "ix0fn5rbbtd",
+	"uniqueId": "47iusrjuq9p",
 	"objectTypes": {
 		"items": [
-			"Background",
-			"background1",
+			"background",
+			"platform",
 			"terrain",
 			"water",
-			"TiledBackground",
-			"saw"
+			"chain",
+			"chain1",
+			"spike"
 		],
 		"subfolders": []
 	},
@@ -109,17 +110,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "loading-logo.png",
-					"type": "image/png",
-					"sid": 938447783768864,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				},
-				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 823390548686897,
+					"sid": 735872848740287,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -127,23 +120,7 @@
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 404324898350581,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 929842178779986,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 625874548784113,
+					"sid": 486348317891527,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -151,7 +128,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 766528324259744,
+					"sid": 693035456896073,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -159,9 +136,33 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 367881686158124,
+					"sid": 208766336910528,
 					"icon-info": {
 						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 278903104392529,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 986708026691265,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 713951729414351,
+					"icon-info": {
+						"purpose": "loading-logo"
 					}
 				}
 			],
