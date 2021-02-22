@@ -1,23 +1,23 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23400,
-	"name": "Level 2 juvee",
+	"name": "Juvee level 3",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
@@ -32,16 +32,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Rotate",
-			"name": "Rotate",
+			"id": "Sin",
+			"name": "Sine",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
 			"version": "r234",
 			"bundled": false
@@ -55,17 +55,15 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "1x8jh0j8ojv",
+	"uniqueId": "ix0fn5rbbtd",
 	"objectTypes": {
 		"items": [
-			"TiledBackground3",
-			"platform",
-			"object1",
-			"chain",
-			"spike",
-			"chain1",
-			"Sprite",
-			"Sprite2"
+			"Background",
+			"background1",
+			"terrain",
+			"water",
+			"TiledBackground",
+			"saw"
 		],
 		"subfolders": []
 	},
@@ -111,41 +109,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 765993214205872,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 936751364967385,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 679924694450211,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 495762418065326,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 375806600093833,
+					"sid": 938447783768864,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}
@@ -153,7 +119,23 @@
 				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 677730195708127,
+					"sid": 823390548686897,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 404324898350581,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 929842178779986,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -161,7 +143,23 @@
 				{
 					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 748203014367950,
+					"sid": 625874548784113,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 766528324259744,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 367881686158124,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
