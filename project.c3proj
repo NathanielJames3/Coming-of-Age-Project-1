@@ -1,57 +1,25 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 23404,
-	"name": "ComingOfAgeProject",
+	"savedWithRelease": 23400,
+	"name": "Level 2 juvee",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r234.4",
+			"version": "r234",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Platform",
-			"name": "Platform",
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r234.4",
+			"version": "r234",
 			"bundled": false
 		},
 		{
@@ -59,52 +27,52 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r234.4",
+			"version": "r234",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
+			"id": "Rotate",
+			"name": "Rotate",
 			"author": "Scirra",
-			"version": "r234.4",
+			"version": "r234",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r234",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"version": "r234",
 			"bundled": false
 		}
 	],
-	"uniqueId": "4w0oyy5nyf4",
+	"uniqueId": "1x8jh0j8ojv",
 	"objectTypes": {
 		"items": [
-			"Player",
-			"Platform",
-			"Keyboard",
-			"SlingshotGet",
-			"ShotBullet",
-			"AmmoText",
-			"Hourglass",
-			"TimeText",
-			"Door",
-			"Target",
-			"RequirementDoor",
-			"PlayerTeen",
-			"PlayerAdult",
-			"PlayerOld",
-			"WallBG",
-			"Bed",
-			"Bookshelf",
-			"Chair",
-			"Nightstand",
-			"Poster",
-			"Picture",
-			"TiledBackground"
+			"TiledBackground3",
+			"platform",
+			"object1",
+			"chain",
+			"spike",
+			"chain1",
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [
-			"Family1"
-		],
+		"items": [],
 		"subfolders": []
 	},
 	"layouts": {
@@ -143,9 +111,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-512.png",
+					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 875360249913826,
+					"sid": 765993214205872,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -153,39 +121,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 993552308958898,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "loading-logo.png",
-					"type": "image/png",
-					"sid": 966890597315377,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-16.png",
-					"type": "image/png",
-					"sid": 857738678843742,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 272846697390494,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 137848538650676,
+					"sid": 936751364967385,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -193,7 +129,39 @@
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 533288340628960,
+					"sid": 679924694450211,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 495762418065326,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 375806600093833,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 677730195708127,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 748203014367950,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -203,29 +171,7 @@
 		},
 		"general": {
 			"items": [],
-			"subfolders": [
-				{
-					"items": [
-						{
-							"name": "juvi idle sprite sheet..png",
-							"type": "image/png",
-							"sid": 434593917550950
-						},
-						{
-							"name": "juvi-walk.png",
-							"type": "image/png",
-							"sid": 152844099038274
-						},
-						{
-							"name": "juvi jumpsheet.png",
-							"type": "image/png",
-							"sid": 926023732145085
-						}
-					],
-					"subfolders": [],
-					"name": "Sprites"
-				}
-			]
+			"subfolders": []
 		}
 	},
 	"timelines": {
